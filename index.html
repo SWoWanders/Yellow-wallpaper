@@ -1,4 +1,9 @@
+<!doctype html>
+<html lang="en">
+<head>
 <title>The Yellow Wallpaper</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=La+Belle+Aurore&display=swap">
@@ -17,6 +22,7 @@
   --body:"IM Fell English", "Iowan Old Style", Georgia, serif;
   --hand:"La Belle Aurore", "Segoe Script", "Bradley Hand", cursive;
 }
+[hidden]{display:none!important}
 html,body{height:100%;margin:0;background:var(--ink);color:var(--bone);overflow:hidden;font-family:var(--body);touch-action:none;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent}
 #c{position:fixed;inset:0;width:100%;height:100%;display:block}
 #vig{position:fixed;inset:0;pointer-events:none;background:radial-gradient(ellipse at center, transparent 42%, rgba(14,12,7,.55) 75%, rgba(14,12,7,.95) 100%);opacity:.5;transition:opacity 1.2s}
@@ -67,6 +73,9 @@ html,body{height:100%;margin:0;background:var(--ink);color:var(--bone);overflow:
 #loading{font:italic 15px var(--body);color:var(--dim);margin-top:18px;min-height:20px}
 @media (prefers-reduced-motion:reduce){#cap,#banner,#fade,#hud,#vig{transition:none}}
 </style>
+</head>
+<body>
+
 
 <canvas id="c" aria-label="The attic nursery"></canvas>
 <div id="tint"></div>
@@ -847,3 +856,6 @@ document.addEventListener('visibilitychange',()=>{if(document.hidden&&R.started&
 boot();
 })();
 </script>
+
+</body>
+</html>
